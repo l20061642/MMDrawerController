@@ -1,0 +1,6 @@
+[submodule "KitchenSink/Tests/MMKIFGestures"]
+	path = KitchenSink/Tests/MMKIFGestures
+	url = git://github.com/xephos13/MMKIFGestures.git
+[submodule "KitchenSink/Tests/KIF"]
+	path = KitchenSink/Tests/KIF
+	url = git://github.com/xephos13/KIF.git
