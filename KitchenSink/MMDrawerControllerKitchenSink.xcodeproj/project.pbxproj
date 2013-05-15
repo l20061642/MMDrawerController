@@ -140,6 +140,7 @@
 				2961190C173845E000CD4063 /* ViewControllers */,
 				2961190B173845D100CD4063 /* TableViewHelpers */,
 				294A1D1717199537005BF6B1 /* Supporting Files */,
+				6BB20464174441D90064260B /* Tests */,
 			);
 			path = ExampleFiles;
 			sourceTree = "<group>";
@@ -232,6 +233,13 @@
 				29E2C6171738A10F00606309 /* Icon@2x.png */,
 			);
 			path = Icons;
+			sourceTree = SOURCE_ROOT;
+		};
+		6BB20464174441D90064260B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
