@@ -366,9 +366,9 @@
 			productReference = 294A1D0D17199537005BF6B1 /* MMDrawerControllerKitchenSink.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6BB204A4174444D10064260B /* MMDrawerControllerKitchenSinkKIFTests */ = {
+		6BB204A4174444D10064260B /* MMDrawerKIFTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSinkKIFTests" */;
+			buildConfigurationList = 6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerKIFTests" */;
 			buildPhases = (
 				6BB204A5174444D10064260B /* Sources */,
 				6BB204B9174444D10064260B /* Frameworks */,
@@ -378,7 +378,7 @@
 			);
 			dependencies = (
 			);
-			name = MMDrawerControllerKitchenSinkKIFTests;
+			name = MMDrawerKIFTests;
 			productName = MMSideDrawerContainerViewController;
 			productReference = 6BB204CB174444D10064260B /* MMDrawerControllerKitchenSink copy.app */;
 			productType = "com.apple.product-type.application";
@@ -412,7 +412,7 @@
 			projectRoot = "";
 			targets = (
 				294A1D0C17199537005BF6B1 /* MMDrawerControllerKitchenSink */,
-				6BB204A4174444D10064260B /* MMDrawerControllerKitchenSinkKIFTests */,
+				6BB204A4174444D10064260B /* MMDrawerKIFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,10 +615,25 @@
 		6BB204C9174444D10064260B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KitchenSink/Tests",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleFiles/MMDrawerControllerKitchenSink-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KitchenSink/Tests/KIF/\"/**";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Tests/MMDrawerControllerKitchenSinkKIFTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "MMDrawerControllerKitchenSink copy";
 				WRAPPER_EXTENSION = app;
 			};
@@ -657,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSinkKIFTests" */ = {
+		6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerKIFTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BB204C9174444D10064260B /* Debug */,

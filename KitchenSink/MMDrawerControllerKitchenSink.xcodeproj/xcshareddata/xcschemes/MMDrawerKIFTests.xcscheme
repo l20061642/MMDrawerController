@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6BB204A4174444D10064260B"
                BuildableName = "MMDrawerControllerKitchenSink.app"
-               BlueprintName = "MMDrawerControllerKitchenSinkKIFTests"
+               BlueprintName = "MMDrawerKIFTests"
                ReferencedContainer = "container:MMDrawerControllerKitchenSink.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BB204A4174444D10064260B"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "MMDrawerControllerKitchenSinkKIFTests"
+            BlueprintName = "MMDrawerKIFTests"
             ReferencedContainer = "container:MMDrawerControllerKitchenSink.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -53,10 +53,17 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BB204A4174444D10064260B"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "MMDrawerControllerKitchenSinkKIFTests"
+            BlueprintName = "MMDrawerKIFTests"
             ReferencedContainer = "container:MMDrawerControllerKitchenSink.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "KIF_EXIT_ON_FAILURE"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -71,7 +78,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BB204A4174444D10064260B"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "MMDrawerControllerKitchenSinkKIFTests"
+            BlueprintName = "MMDrawerKIFTests"
             ReferencedContainer = "container:MMDrawerControllerKitchenSink.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
