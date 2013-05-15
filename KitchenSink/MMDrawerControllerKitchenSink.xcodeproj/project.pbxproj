@@ -39,6 +39,40 @@
 		6BB2046E174443B60064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
 		6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */; };
 		6BB20470174443B60064260B /* UITouch+MMKIFTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */; };
+		6BB204A6174444D10064260B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A1D1C17199537005BF6B1 /* main.m */; };
+		6BB204A7174444D10064260B /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A1D2017199537005BF6B1 /* MMAppDelegate.m */; };
+		6BB204A8174444D10064260B /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A1D2F1719982B005BF6B1 /* MMDrawerController.m */; };
+		6BB204A9174444D10064260B /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A1D3217199844005BF6B1 /* UIViewController+MMDrawerController.m */; };
+		6BB204AA174444D10064260B /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */; };
+		6BB204AB174444D10064260B /* MMExampleCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C28486172B07C10089E872 /* MMExampleCenterTableViewController.m */; };
+		6BB204AC174444D10064260B /* MMExampleSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C2848C172EB1710089E872 /* MMExampleSideDrawerViewController.m */; };
+		6BB204AD174444D10064260B /* MMExampleLeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29848B5E173015D3006D8502 /* MMExampleLeftSideDrawerViewController.m */; };
+		6BB204AE174444D10064260B /* MMExampleRightSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29848B6417301793006D8502 /* MMExampleRightSideDrawerViewController.m */; };
+		6BB204AF174444D10064260B /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CFD5EB173192D100E1FABB /* MMDrawerVisualState.m */; };
+		6BB204B0174444D10064260B /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CFD5EE1731C7DB00E1FABB /* MMExampleDrawerVisualStateManager.m */; };
+		6BB204B1174444D10064260B /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297EA0041738112A00472DF4 /* MMTableViewCell.m */; };
+		6BB204B2174444D10064260B /* MMSideDrawerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2969636B1738141500281B9A /* MMSideDrawerTableViewCell.m */; };
+		6BB204B3174444D10064260B /* MMSideDrawerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E0ADC1738173B009FAA3C /* MMSideDrawerSectionHeaderView.m */; };
+		6BB204B4174444D10064260B /* MMLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961190617383AFC00CD4063 /* MMLogoView.m */; };
+		6BB204B5174444D10064260B /* MMCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 296119091738416400CD4063 /* MMCenterTableViewCell.m */; };
+		6BB204B6174444D10064260B /* MMKIFGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB20467174443B60064260B /* MMKIFGestureHandler.m */; };
+		6BB204B7174444D10064260B /* UIEvent+MMKIFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */; };
+		6BB204B8174444D10064260B /* UITouch+MMKIFTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */; };
+		6BB204BA174444D10064260B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C28480172AD77D0089E872 /* QuartzCore.framework */; };
+		6BB204BB174444D10064260B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A1D1017199537005BF6B1 /* UIKit.framework */; };
+		6BB204BC174444D10064260B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A1D1217199537005BF6B1 /* Foundation.framework */; };
+		6BB204BD174444D10064260B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A1D1417199537005BF6B1 /* CoreGraphics.framework */; };
+		6BB204BF174444D10064260B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 294A1D1917199537005BF6B1 /* InfoPlist.strings */; };
+		6BB204C0174444D10064260B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 294A1D2217199537005BF6B1 /* Default.png */; };
+		6BB204C1174444D10064260B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 294A1D2417199537005BF6B1 /* Default@2x.png */; };
+		6BB204C2174444D10064260B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 294A1D2617199537005BF6B1 /* Default-568h@2x.png */; };
+		6BB204C3174444D10064260B /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6141738A10F00606309 /* Icon-72.png */; };
+		6BB204C4174444D10064260B /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6151738A10F00606309 /* Icon-72@2x.png */; };
+		6BB204C5174444D10064260B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6161738A10F00606309 /* Icon.png */; };
+		6BB204C6174444D10064260B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6171738A10F00606309 /* Icon@2x.png */; };
+		6BB204C7174444D10064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
+		6BB204CE174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */; };
+		6BB204CF174446000064260B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB20476174443C90064260B /* libKIF.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +140,8 @@
 		6BB2046B174443B60064260B /* UITouch+MMKIFTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MMKIFTouch.h"; sourceTree = "<group>"; };
 		6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MMKIFTouch.m"; sourceTree = "<group>"; };
 		6BB20471174443C80064260B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		6BB204CB174444D10064260B /* MMDrawerControllerKitchenSink copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMDrawerControllerKitchenSink copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MMDrawerControllerKitchenSinkKIFTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +153,18 @@
 				294A1D1117199537005BF6B1 /* UIKit.framework in Frameworks */,
 				294A1D1317199537005BF6B1 /* Foundation.framework in Frameworks */,
 				294A1D1517199537005BF6B1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB204B9174444D10064260B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB204CF174446000064260B /* libKIF.a in Frameworks */,
+				6BB204BA174444D10064260B /* QuartzCore.framework in Frameworks */,
+				6BB204BB174444D10064260B /* UIKit.framework in Frameworks */,
+				6BB204BC174444D10064260B /* Foundation.framework in Frameworks */,
+				6BB204BD174444D10064260B /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				294A1D0D17199537005BF6B1 /* MMDrawerControllerKitchenSink.app */,
+				6BB204CB174444D10064260B /* MMDrawerControllerKitchenSink copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,6 +311,7 @@
 			children = (
 				6BB20471174443C80064260B /* KIF.xcodeproj */,
 				6BB20465174443B60064260B /* MMKIFGestures */,
+				6BB204A3174444A20064260B /* Tests */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -288,6 +338,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6BB204A3174444A20064260B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +364,23 @@
 			name = MMDrawerControllerKitchenSink;
 			productName = MMSideDrawerContainerViewController;
 			productReference = 294A1D0D17199537005BF6B1 /* MMDrawerControllerKitchenSink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BB204A4174444D10064260B /* MMDrawerControllerKitchenSinkKIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSinkKIFTests" */;
+			buildPhases = (
+				6BB204A5174444D10064260B /* Sources */,
+				6BB204B9174444D10064260B /* Frameworks */,
+				6BB204BE174444D10064260B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMDrawerControllerKitchenSinkKIFTests;
+			productName = MMSideDrawerContainerViewController;
+			productReference = 6BB204CB174444D10064260B /* MMDrawerControllerKitchenSink copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -337,6 +412,7 @@
 			projectRoot = "";
 			targets = (
 				294A1D0C17199537005BF6B1 /* MMDrawerControllerKitchenSink */,
+				6BB204A4174444D10064260B /* MMDrawerControllerKitchenSinkKIFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,6 +441,23 @@
 				29E2C61A1738A10F00606309 /* Icon.png in Resources */,
 				29E2C61B1738A10F00606309 /* Icon@2x.png in Resources */,
 				6BB2046E174443B60064260B /* README.md in Resources */,
+				6BB204CE174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB204BE174444D10064260B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB204BF174444D10064260B /* InfoPlist.strings in Resources */,
+				6BB204C0174444D10064260B /* Default.png in Resources */,
+				6BB204C1174444D10064260B /* Default@2x.png in Resources */,
+				6BB204C2174444D10064260B /* Default-568h@2x.png in Resources */,
+				6BB204C3174444D10064260B /* Icon-72.png in Resources */,
+				6BB204C4174444D10064260B /* Icon-72@2x.png in Resources */,
+				6BB204C5174444D10064260B /* Icon.png in Resources */,
+				6BB204C6174444D10064260B /* Icon@2x.png in Resources */,
+				6BB204C7174444D10064260B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +487,32 @@
 				6BB2046D174443B60064260B /* MMKIFGestureHandler.m in Sources */,
 				6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */,
 				6BB20470174443B60064260B /* UITouch+MMKIFTouch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB204A5174444D10064260B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB204A6174444D10064260B /* main.m in Sources */,
+				6BB204A7174444D10064260B /* MMAppDelegate.m in Sources */,
+				6BB204A8174444D10064260B /* MMDrawerController.m in Sources */,
+				6BB204A9174444D10064260B /* UIViewController+MMDrawerController.m in Sources */,
+				6BB204AA174444D10064260B /* MMDrawerBarButtonItem.m in Sources */,
+				6BB204AB174444D10064260B /* MMExampleCenterTableViewController.m in Sources */,
+				6BB204AC174444D10064260B /* MMExampleSideDrawerViewController.m in Sources */,
+				6BB204AD174444D10064260B /* MMExampleLeftSideDrawerViewController.m in Sources */,
+				6BB204AE174444D10064260B /* MMExampleRightSideDrawerViewController.m in Sources */,
+				6BB204AF174444D10064260B /* MMDrawerVisualState.m in Sources */,
+				6BB204B0174444D10064260B /* MMExampleDrawerVisualStateManager.m in Sources */,
+				6BB204B1174444D10064260B /* MMTableViewCell.m in Sources */,
+				6BB204B2174444D10064260B /* MMSideDrawerTableViewCell.m in Sources */,
+				6BB204B3174444D10064260B /* MMSideDrawerSectionHeaderView.m in Sources */,
+				6BB204B4174444D10064260B /* MMLogoView.m in Sources */,
+				6BB204B5174444D10064260B /* MMCenterTableViewCell.m in Sources */,
+				6BB204B6174444D10064260B /* MMKIFGestureHandler.m in Sources */,
+				6BB204B7174444D10064260B /* UIEvent+MMKIFEvent.m in Sources */,
+				6BB204B8174444D10064260B /* UITouch+MMKIFTouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +612,30 @@
 			};
 			name = Release;
 		};
+		6BB204C9174444D10064260B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleFiles/MMDrawerControllerKitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Tests/MMDrawerControllerKitchenSinkKIFTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "MMDrawerControllerKitchenSink copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6BB204CA174444D10064260B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleFiles/MMDrawerControllerKitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Tests/MMDrawerControllerKitchenSinkKIFTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "MMDrawerControllerKitchenSink copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,6 +653,15 @@
 			buildConfigurations = (
 				294A1D2B17199537005BF6B1 /* Debug */,
 				294A1D2C17199537005BF6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB204C8174444D10064260B /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSinkKIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB204C9174444D10064260B /* Debug */,
+				6BB204CA174444D10064260B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
