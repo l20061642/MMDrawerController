@@ -35,7 +35,21 @@
 		29E2C61A1738A10F00606309 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6161738A10F00606309 /* Icon.png */; };
 		29E2C61B1738A10F00606309 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6171738A10F00606309 /* Icon@2x.png */; };
 		29F6163B172AC22A00B31282 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */; };
+		6BB2046D174443B60064260B /* MMKIFGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB20467174443B60064260B /* MMKIFGestureHandler.m */; };
+		6BB2046E174443B60064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
+		6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */; };
+		6BB20470174443B60064260B /* UITouch+MMKIFTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BB20475174443C90064260B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BB20471174443C80064260B /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		294A1D0D17199537005BF6B1 /* MMDrawerControllerKitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMDrawerControllerKitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +98,14 @@
 		29E2C6171738A10F00606309 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		29F61639172AC22A00B31282 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		6BB20466174443B60064260B /* MMKIFGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKIFGestureHandler.h; sourceTree = "<group>"; };
+		6BB20467174443B60064260B /* MMKIFGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKIFGestureHandler.m; sourceTree = "<group>"; };
+		6BB20468174443B60064260B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6BB20469174443B60064260B /* UIEvent+MMKIFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIEvent+MMKIFEvent.h"; sourceTree = "<group>"; };
+		6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+MMKIFEvent.m"; sourceTree = "<group>"; };
+		6BB2046B174443B60064260B /* UITouch+MMKIFTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MMKIFTouch.h"; sourceTree = "<group>"; };
+		6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MMKIFTouch.m"; sourceTree = "<group>"; };
+		6BB20471174443C80064260B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,9 +260,33 @@
 		6BB20464174441D90064260B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				6BB20471174443C80064260B /* KIF.xcodeproj */,
+				6BB20465174443B60064260B /* MMKIFGestures */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
+		};
+		6BB20465174443B60064260B /* MMKIFGestures */ = {
+			isa = PBXGroup;
+			children = (
+				6BB20466174443B60064260B /* MMKIFGestureHandler.h */,
+				6BB20467174443B60064260B /* MMKIFGestureHandler.m */,
+				6BB20468174443B60064260B /* README.md */,
+				6BB20469174443B60064260B /* UIEvent+MMKIFEvent.h */,
+				6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */,
+				6BB2046B174443B60064260B /* UITouch+MMKIFTouch.h */,
+				6BB2046C174443B60064260B /* UITouch+MMKIFTouch.m */,
+			);
+			path = MMKIFGestures;
+			sourceTree = "<group>";
+		};
+		6BB20472174443C80064260B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BB20476174443C90064260B /* libKIF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -282,12 +328,28 @@
 			mainGroup = 294A1D0417199537005BF6B1;
 			productRefGroup = 294A1D0E17199537005BF6B1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6BB20472174443C80064260B /* Products */;
+					ProjectRef = 6BB20471174443C80064260B /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				294A1D0C17199537005BF6B1 /* MMDrawerControllerKitchenSink */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6BB20476174443C90064260B /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 6BB20475174443C90064260B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		294A1D0B17199537005BF6B1 /* Resources */ = {
@@ -302,6 +364,7 @@
 				29E2C6191738A10F00606309 /* Icon-72@2x.png in Resources */,
 				29E2C61A1738A10F00606309 /* Icon.png in Resources */,
 				29E2C61B1738A10F00606309 /* Icon@2x.png in Resources */,
+				6BB2046E174443B60064260B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +391,9 @@
 				299E0ADD1738173B009FAA3C /* MMSideDrawerSectionHeaderView.m in Sources */,
 				2961190717383AFC00CD4063 /* MMLogoView.m in Sources */,
 				2961190A1738416400CD4063 /* MMCenterTableViewCell.m in Sources */,
+				6BB2046D174443B60064260B /* MMKIFGestureHandler.m in Sources */,
+				6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */,
+				6BB20470174443B60064260B /* UITouch+MMKIFTouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
