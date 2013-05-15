@@ -29,6 +29,10 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#if RUN_KIF_TESTS
+#import "MMDrawerKIFTestController.h"
+#endif
+
 @implementation MMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -64,6 +68,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+#if RUN_KIF_TESTS
+    [[MMDrawerKIFTestController sharedInstance] startTestingWithCompletionBlock:^{
+        exit([[MMDrawerKIFTestController sharedInstance] failureCount]);
+    }];
+#endif
+    
     return YES;
 }
 

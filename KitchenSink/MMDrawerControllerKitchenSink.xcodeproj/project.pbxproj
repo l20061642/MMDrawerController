@@ -73,6 +73,7 @@
 		6BB204C7174444D10064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
 		6BB204CE174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */; };
 		6BB204CF174446000064260B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB20476174443C90064260B /* libKIF.a */; };
+		6BB204D2174449470064260B /* MMDrawerKIFTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB204D1174449470064260B /* MMDrawerKIFTestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,8 @@
 		6BB20471174443C80064260B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
 		6BB204CB174444D10064260B /* MMDrawerControllerKitchenSink copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMDrawerControllerKitchenSink copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MMDrawerControllerKitchenSinkKIFTests-Info.plist"; sourceTree = "<group>"; };
+		6BB204D0174449470064260B /* MMDrawerKIFTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestController.h; sourceTree = "<group>"; };
+		6BB204D1174449470064260B /* MMDrawerKIFTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerKIFTestController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */,
+				6BB204D0174449470064260B /* MMDrawerKIFTestController.h */,
+				6BB204D1174449470064260B /* MMDrawerKIFTestController.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				6BB204B6174444D10064260B /* MMKIFGestureHandler.m in Sources */,
 				6BB204B7174444D10064260B /* UIEvent+MMKIFEvent.m in Sources */,
 				6BB204B8174444D10064260B /* UITouch+MMKIFTouch.m in Sources */,
+				6BB204D2174449470064260B /* MMDrawerKIFTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,16 +623,15 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/KitchenSink/Tests",
+					"\"$(SRCROOT)/Tests/\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleFiles/MMDrawerControllerKitchenSink-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
 					"RUN_KIF_TESTS=1",
 					"DEBUG=1",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KitchenSink/Tests/KIF/\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Tests/KIF/\"/**";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Tests/MMDrawerControllerKitchenSinkKIFTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
@@ -635,6 +640,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "MMDrawerControllerKitchenSink copy";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -647,6 +653,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Tests/MMDrawerControllerKitchenSinkKIFTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "MMDrawerControllerKitchenSink copy";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
