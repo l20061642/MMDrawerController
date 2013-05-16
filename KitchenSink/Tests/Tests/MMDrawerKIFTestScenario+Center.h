@@ -15,5 +15,7 @@
 + (id)scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenter;
 + (id)scenarioToTapRightDrawerbarButtonAndCloseByTappingCenter;
 + (id)scenarioToDoubleTapCenterViewToPreviewLeftDrawer;
++ (id)scenarioToSwipeCenterViewAndRevealLeftDrawer;
++ (id)scenarioToSwipeCenterViewAndRevealRightDrawer;
 
 @end

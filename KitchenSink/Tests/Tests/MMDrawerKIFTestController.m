@@ -23,6 +23,8 @@
     [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenter]];
     [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerbarButtonAndCloseByTappingCenter]];
     [self addScenario:[MMDrawerKIFTestScenario scenarioToDoubleTapCenterViewToPreviewLeftDrawer]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToSwipeCenterViewAndRevealLeftDrawer]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToSwipeCenterViewAndRevealRightDrawer]];
 }
 
 @end

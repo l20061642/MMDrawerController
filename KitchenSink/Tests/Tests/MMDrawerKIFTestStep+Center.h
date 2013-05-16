@@ -10,9 +10,14 @@
 
 @interface MMDrawerKIFTestStep (Center)
 
-+ (id)stepToTapCenterView;
-+ (id)stepToSingleTouchDoubleTapCenterView;
 + (MMDrawerKIFTestStep *)stepToTapLeftDrawerBarButton;
 + (MMDrawerKIFTestStep *)stepToTapRightDrawerBarButton;
++ (MMDrawerKIFTestStep *)stepToWaitForBounceAnimation;
+
++ (id)stepToTapCenterView;
++ (id)stepToSingleTouchDoubleTapCenterView;
+
++ (id)stepToSwipeCenterViewToRevealLeftDrawer;
++ (id)stepToSwipeCenterViewToRevealRightDrawer;
 
 @end

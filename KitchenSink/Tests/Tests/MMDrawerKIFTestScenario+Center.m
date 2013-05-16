@@ -85,6 +85,39 @@
     
     [scenario addStep:[MMDrawerKIFTestStep stepToSingleTouchDoubleTapCenterView]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToDisappear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForBounceAnimation]];
+    
+    return scenario;
+}
+
++ (id)scenarioToSwipeCenterViewAndRevealLeftDrawer;
+{
+    NSString *description = NSLocalizedString(@"CENTER - Test the user can swipe the center view "
+                                              "to the right and reveal the left drawer",
+                                              @"CENTER - Test the user can swipe the center view "
+                                              "to the right and reveal the left drawer");
+    MMDrawerKIFTestScenario *scenario = [MMDrawerKIFTestScenario scenarioWithDescription:description];
+    
+    [scenario addStep:[MMDrawerKIFTestStep stepToSwipeCenterViewToRevealLeftDrawer]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToAppear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterView]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToDisappear]];
+    
+    return scenario;
+}
+
++ (id)scenarioToSwipeCenterViewAndRevealRightDrawer;
+{
+    NSString *description = NSLocalizedString(@"CENTER - Test the user can swipe the center view "
+                                              "to the left and reveal the right drawer",
+                                              @"CENTER - Test the user can swipe the center view "
+                                              "to the left and reveal the right drawer");
+    MMDrawerKIFTestScenario *scenario = [MMDrawerKIFTestScenario scenarioWithDescription:description];
+    
+    [scenario addStep:[MMDrawerKIFTestStep stepToSwipeCenterViewToRevealRightDrawer]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToAppear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterView]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToDisappear]];
     
     return scenario;
 }
