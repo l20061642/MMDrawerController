@@ -56,6 +56,10 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 {
     [super viewDidLoad];
     
+    NSString *kifViewLabel = NSLocalizedString(@"Center View Label",
+                                               @"Center View Label");
+    [self.view setAccessibilityLabel:kifViewLabel];
+    
     NSString *kifTableLabel = NSLocalizedString(@"Center Table View",
                                                 @"Center Table View");
     [self setAccessibilityLabel:kifTableLabel];

@@ -10,5 +10,6 @@
 #define MMDrawerControllerKitchenSink_MMDrawerKIFTestScenarioImports_h
 
 #import "MMDrawerKIFTestScenario.h"
+#import "MMDrawerKIFTestScenario+Center.h"
 
 #endif

@@ -37,6 +37,10 @@
 		29F6163B172AC22A00B31282 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */; };
 		6B9A3AB0174454D000CF61BE /* MMDrawerKIFTestStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AAF174454D000CF61BE /* MMDrawerKIFTestStep.m */; };
 		6B9A3AB3174454E700CF61BE /* MMDrawerKIFTestScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */; };
+		6B9A3AB817445D1900CF61BE /* MMDrawerKIFTestStep+Center.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AB717445D1900CF61BE /* MMDrawerKIFTestStep+Center.m */; };
+		6B9A3ABB17445DF700CF61BE /* MMDrawerKIFTestScenario+Center.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3ABA17445DF700CF61BE /* MMDrawerKIFTestScenario+Center.m */; };
+		6B9A3ABE1744642000CF61BE /* MMDrawerKIFTestStep+Left.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3ABD1744641F00CF61BE /* MMDrawerKIFTestStep+Left.m */; };
+		6B9A3AC11744642A00CF61BE /* MMDrawerKIFTestStep+Right.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AC01744642A00CF61BE /* MMDrawerKIFTestStep+Right.m */; };
 		6BB2046D174443B60064260B /* MMKIFGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB20467174443B60064260B /* MMKIFGestureHandler.m */; };
 		6BB2046E174443B60064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
 		6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */; };
@@ -141,6 +145,14 @@
 		6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerKIFTestScenario.m; sourceTree = "<group>"; };
 		6B9A3AB41744550600CF61BE /* MMDrawerKIFTestScenarioImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestScenarioImports.h; sourceTree = "<group>"; };
 		6B9A3AB51744554C00CF61BE /* MMDrawerKIFTestStepImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestStepImports.h; sourceTree = "<group>"; };
+		6B9A3AB617445D1900CF61BE /* MMDrawerKIFTestStep+Center.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerKIFTestStep+Center.h"; sourceTree = "<group>"; };
+		6B9A3AB717445D1900CF61BE /* MMDrawerKIFTestStep+Center.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerKIFTestStep+Center.m"; sourceTree = "<group>"; };
+		6B9A3AB917445DF700CF61BE /* MMDrawerKIFTestScenario+Center.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerKIFTestScenario+Center.h"; sourceTree = "<group>"; };
+		6B9A3ABA17445DF700CF61BE /* MMDrawerKIFTestScenario+Center.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerKIFTestScenario+Center.m"; sourceTree = "<group>"; };
+		6B9A3ABC1744641F00CF61BE /* MMDrawerKIFTestStep+Left.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerKIFTestStep+Left.h"; sourceTree = "<group>"; };
+		6B9A3ABD1744641F00CF61BE /* MMDrawerKIFTestStep+Left.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerKIFTestStep+Left.m"; sourceTree = "<group>"; };
+		6B9A3ABF1744642A00CF61BE /* MMDrawerKIFTestStep+Right.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerKIFTestStep+Right.h"; sourceTree = "<group>"; };
+		6B9A3AC01744642A00CF61BE /* MMDrawerKIFTestStep+Right.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerKIFTestStep+Right.m"; sourceTree = "<group>"; };
 		6BB20466174443B60064260B /* MMKIFGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKIFGestureHandler.h; sourceTree = "<group>"; };
 		6BB20467174443B60064260B /* MMKIFGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKIFGestureHandler.m; sourceTree = "<group>"; };
 		6BB20468174443B60064260B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -323,6 +335,8 @@
 				6B9A3AB1174454E700CF61BE /* MMDrawerKIFTestScenario.h */,
 				6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */,
 				6B9A3AB41744550600CF61BE /* MMDrawerKIFTestScenarioImports.h */,
+				6B9A3AB917445DF700CF61BE /* MMDrawerKIFTestScenario+Center.h */,
+				6B9A3ABA17445DF700CF61BE /* MMDrawerKIFTestScenario+Center.m */,
 			);
 			name = Scenarios;
 			sourceTree = "<group>";
@@ -333,6 +347,12 @@
 				6B9A3AAE174454D000CF61BE /* MMDrawerKIFTestStep.h */,
 				6B9A3AAF174454D000CF61BE /* MMDrawerKIFTestStep.m */,
 				6B9A3AB51744554C00CF61BE /* MMDrawerKIFTestStepImports.h */,
+				6B9A3AB617445D1900CF61BE /* MMDrawerKIFTestStep+Center.h */,
+				6B9A3AB717445D1900CF61BE /* MMDrawerKIFTestStep+Center.m */,
+				6B9A3ABC1744641F00CF61BE /* MMDrawerKIFTestStep+Left.h */,
+				6B9A3ABD1744641F00CF61BE /* MMDrawerKIFTestStep+Left.m */,
+				6B9A3ABF1744642A00CF61BE /* MMDrawerKIFTestStep+Right.h */,
+				6B9A3AC01744642A00CF61BE /* MMDrawerKIFTestStep+Right.m */,
 			);
 			name = Steps;
 			sourceTree = "<group>";
@@ -551,6 +571,10 @@
 				6BB204D2174449470064260B /* MMDrawerKIFTestController.m in Sources */,
 				6B9A3AB0174454D000CF61BE /* MMDrawerKIFTestStep.m in Sources */,
 				6B9A3AB3174454E700CF61BE /* MMDrawerKIFTestScenario.m in Sources */,
+				6B9A3AB817445D1900CF61BE /* MMDrawerKIFTestStep+Center.m in Sources */,
+				6B9A3ABB17445DF700CF61BE /* MMDrawerKIFTestScenario+Center.m in Sources */,
+				6B9A3ABE1744642000CF61BE /* MMDrawerKIFTestStep+Left.m in Sources */,
+				6B9A3AC11744642A00CF61BE /* MMDrawerKIFTestStep+Right.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

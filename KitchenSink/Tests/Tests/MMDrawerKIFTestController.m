@@ -13,7 +13,15 @@
 
 - (void)initializeScenarios;
 {
-    
+    [self addCenterViewScenarios];
+}
+
+- (void)addCenterViewScenarios;
+{
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerBarButton]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerBarButton]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenterTable]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerbarButtonAndCloseByTappingCenterTable]];
 }
 
 @end

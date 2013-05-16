@@ -9,6 +9,8 @@
 #ifndef MMDrawerControllerKitchenSink_MMDrawerKIFTestStepImports_h
 #define MMDrawerControllerKitchenSink_MMDrawerKIFTestStepImports_h
 
-#import "MMDrawerKIFTestStep.h"
+#import "MMDrawerKIFTestStep+Center.h"
+#import "MMDrawerKIFTestStep+Left.h"
+#import "MMDrawerKIFTestStep+Right.h"
 
 #endif

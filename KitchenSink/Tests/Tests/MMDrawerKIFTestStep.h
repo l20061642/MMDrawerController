@@ -7,6 +7,7 @@
 //
 
 #import "KIFTestStep.h"
+#import "MMKIFGestureHandler.h"
 
 @interface MMDrawerKIFTestStep : KIFTestStep
 
