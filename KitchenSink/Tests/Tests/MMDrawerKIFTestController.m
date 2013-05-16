@@ -20,8 +20,9 @@
 {
     [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerBarButton]];
     [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerBarButton]];
-    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenterTable]];
-    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerbarButtonAndCloseByTappingCenterTable]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenter]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToTapRightDrawerbarButtonAndCloseByTappingCenter]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToDoubleTapCenterViewToPreviewLeftDrawer]];
 }
 
 @end

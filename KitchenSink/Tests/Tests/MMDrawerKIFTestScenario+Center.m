@@ -39,7 +39,7 @@
     return scenario;
 }
 
-+ (id)scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenterTable;
++ (id)scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenter;
 {
     NSString *description = NSLocalizedString(@"CENTER - Test the user can tap the left bar "
                                               "button then close the side panel by tapping "
@@ -51,13 +51,13 @@
     
     [scenario addStep:[MMDrawerKIFTestStep stepToTapLeftDrawerBarButton]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToAppear]];
-    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterTableView]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterView]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToDisappear]];
     
     return scenario;
 }
 
-+ (id)scenarioToTapRightDrawerbarButtonAndCloseByTappingCenterTable;
++ (id)scenarioToTapRightDrawerbarButtonAndCloseByTappingCenter;
 {
     NSString *description = NSLocalizedString(@"CENTER - Test the user can tap the right bar "
                                               "button then close the side panel by tapping "
@@ -69,8 +69,22 @@
     
     [scenario addStep:[MMDrawerKIFTestStep stepToTapRightDrawerBarButton]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToAppear]];
-    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterTableView]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterView]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToDisappear]];
+    
+    return scenario;
+}
+
++ (id)scenarioToDoubleTapCenterViewToPreviewLeftDrawer;
+{
+    NSString *description = NSLocalizedString(@"CENTER - Test the user can double tap the center "
+                                              "view to preview the left drawer",
+                                              @"CENTER - Test the user can double tap the center "
+                                              "view to preview the left drawer");
+    MMDrawerKIFTestScenario *scenario = [MMDrawerKIFTestScenario scenarioWithDescription:description];
+    
+    [scenario addStep:[MMDrawerKIFTestStep stepToSingleTouchDoubleTapCenterView]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToDisappear]];
     
     return scenario;
 }

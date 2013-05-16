@@ -10,7 +10,8 @@
 
 @interface MMDrawerKIFTestStep (Center)
 
-+ (MMDrawerKIFTestStep *)stepToTapCenterTableView;
++ (id)stepToTapCenterView;
++ (id)stepToSingleTouchDoubleTapCenterView;
 + (MMDrawerKIFTestStep *)stepToTapLeftDrawerBarButton;
 + (MMDrawerKIFTestStep *)stepToTapRightDrawerBarButton;
 
