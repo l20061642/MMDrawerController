@@ -10,14 +10,23 @@
 
 @interface MMDrawerKIFTestStep (Center)
 
+#pragma mark - Navigation
 + (MMDrawerKIFTestStep *)stepToTapLeftDrawerBarButton;
 + (MMDrawerKIFTestStep *)stepToTapRightDrawerBarButton;
 + (MMDrawerKIFTestStep *)stepToWaitForBounceAnimation;
++ (MMDrawerKIFTestStep *)stepToWaitForLeftBarButtonToAppear;
++ (MMDrawerKIFTestStep *)stepToWaitForLeftBarButtonToDisappear;
++ (MMDrawerKIFTestStep *)stepToWaitForRightBarButtonToAppear;
++ (MMDrawerKIFTestStep *)stepToWaitForRightBarButtonToDisappear;
 
 + (id)stepToTapCenterView;
 + (id)stepToSingleTouchDoubleTapCenterView;
 
 + (id)stepToSwipeCenterViewToRevealLeftDrawer;
 + (id)stepToSwipeCenterViewToRevealRightDrawer;
+
+#pragma mark - Table View
++ (id)stepToToggleLeftBarButtonEnabled;
++ (id)stepToToggleRightBarButtonEnabled;
 
 @end

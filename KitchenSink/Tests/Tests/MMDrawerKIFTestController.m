@@ -25,6 +25,8 @@
     [self addScenario:[MMDrawerKIFTestScenario scenarioToDoubleTapCenterViewToPreviewLeftDrawer]];
     [self addScenario:[MMDrawerKIFTestScenario scenarioToSwipeCenterViewAndRevealLeftDrawer]];
     [self addScenario:[MMDrawerKIFTestScenario scenarioToSwipeCenterViewAndRevealRightDrawer]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToEnableAndDisableLeftDrawer]];
+    [self addScenario:[MMDrawerKIFTestScenario scenarioToEnableAndDisableRightDrawer]];
 }
 
 @end

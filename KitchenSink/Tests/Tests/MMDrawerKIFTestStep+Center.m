@@ -10,6 +10,7 @@
 
 @implementation MMDrawerKIFTestStep (Center)
 
+#pragma mark - Navigation
 + (MMDrawerKIFTestStep *)stepToTapLeftDrawerBarButton;
 {
     NSString *label = NSLocalizedString(@"Left Drawer Bar Button",
@@ -36,9 +37,45 @@
     return step;
 }
 
++ (MMDrawerKIFTestStep *)stepToWaitForLeftBarButtonToAppear;
+{
+    NSString *label = NSLocalizedString(@"Left Drawer Bar Button",
+                                        @"Left Drawer Bar Button");
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToWaitForViewWithAccessibilityLabel:label];
+    return step;
+}
+
++ (MMDrawerKIFTestStep *)stepToWaitForLeftBarButtonToDisappear;
+{
+    NSString *label = NSLocalizedString(@"Left Drawer Bar Button",
+                                        @"Left Drawer Bar Button");
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToWaitForAbsenceOfViewWithAccessibilityLabel:label];
+    return step;
+}
+
++ (MMDrawerKIFTestStep *)stepToWaitForRightBarButtonToAppear;
+{
+    NSString *label = NSLocalizedString(@"Right Drawer Bar Button",
+                                        @"Right Drawer Bar Button");
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToWaitForViewWithAccessibilityLabel:label];
+    return step;
+}
+
++ (MMDrawerKIFTestStep *)stepToWaitForRightBarButtonToDisappear;
+{
+    NSString *label = NSLocalizedString(@"Right Drawer Bar Button",
+                                        @"Right Drawer Bar Button");
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToWaitForAbsenceOfViewWithAccessibilityLabel:label];
+    return step;
+}
+
 + (id)stepToTapCenterView;
 {
-    NSString *label = NSLocalizedString(@"Center View", @"Center View");
+    NSString *label = NSLocalizedString(@"Center Table View", @"Center Table View");
     
     NSString *description = [NSString stringWithFormat:
                              @"Step to tap the center of view with label \"%@\"",
@@ -63,7 +100,7 @@
 
 + (id)stepToSingleTouchDoubleTapCenterView;
 {
-    NSString *label = NSLocalizedString(@"Center View", @"Center View");
+    NSString *label = NSLocalizedString(@"Center Table View", @"Center Table View");
     
     NSString *description = [NSString stringWithFormat:
                              @"Step to double tap the center of view \"%@\" with one touch",
@@ -89,7 +126,7 @@
 // TODO: This step is on hold until MMKIFGestures can be updated to handle the touch required
 + (id)stepToDoubleTouchDoubleTapCenterView;
 {
-    NSString *label = NSLocalizedString(@"Center View", @"Center View");
+    NSString *label = NSLocalizedString(@"Center Table View", @"Center Table View");
     
     NSString *description = [NSString stringWithFormat:
                              @"Step to double tap the center of view \"%@\" with two touches",
@@ -115,7 +152,7 @@
 
 + (id)stepToSwipeCenterViewToRevealLeftDrawer;
 {
-    NSString *label = NSLocalizedString(@"Center View", @"Center View");
+    NSString *label = NSLocalizedString(@"Center Table View", @"Center Table View");
     
     NSString *description = [NSString stringWithFormat:
                              @"Step to swipe view \"%@\" to the right",
@@ -136,7 +173,7 @@
 
 + (id)stepToSwipeCenterViewToRevealRightDrawer;
 {
-    NSString *label = NSLocalizedString(@"Center View", @"Center View");
+    NSString *label = NSLocalizedString(@"Center Table View", @"Center Table View");
     
     NSString *description = [NSString stringWithFormat:
                              @"Step to swipe view \"%@\" to the right",
@@ -153,6 +190,31 @@
                 return KIFTestStepResultSuccess;
                 
             }];
+}
+
+#pragma mark - Table View
++ (id)stepToToggleLeftBarButtonEnabled;
+{
+    NSString *label = NSLocalizedString(@"Center Table View",
+                                        @"Center Table View");
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToTapRowInTableViewWithAccessibilityLabel:label
+                                 atIndexPath:indexPath];
+    return step;
+}
+
++ (id)stepToToggleRightBarButtonEnabled;
+{
+    NSString *label = NSLocalizedString(@"Center Table View",
+                                        @"Center Table View");
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:2];
+    
+    MMDrawerKIFTestStep *step = [MMDrawerKIFTestStep
+                                 stepToTapRowInTableViewWithAccessibilityLabel:label
+                                 atIndexPath:indexPath];
+    return step;
 }
 
 @end

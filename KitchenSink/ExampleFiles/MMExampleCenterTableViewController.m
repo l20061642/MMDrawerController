@@ -62,7 +62,7 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     
     NSString *kifTableLabel = NSLocalizedString(@"Center Table View",
                                                 @"Center Table View");
-    [self setAccessibilityLabel:kifTableLabel];
+    [self.tableView setAccessibilityLabel:kifTableLabel];
     
     UITapGestureRecognizer * doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
     [doubleTap setNumberOfTapsRequired:2];

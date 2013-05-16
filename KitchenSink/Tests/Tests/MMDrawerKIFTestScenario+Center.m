@@ -11,6 +11,7 @@
 
 @implementation MMDrawerKIFTestScenario (Center)
 
+#pragma mark - Navigation
 + (id)scenarioToTapLeftDrawerBarButton;
 {
     NSString *description = NSLocalizedString(@"CENTER - Test the user can tap the left bar button",
@@ -85,7 +86,6 @@
     
     [scenario addStep:[MMDrawerKIFTestStep stepToSingleTouchDoubleTapCenterView]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftSideToDisappear]];
-    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForBounceAnimation]];
     
     return scenario;
 }
@@ -118,6 +118,41 @@
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToAppear]];
     [scenario addStep:[MMDrawerKIFTestStep stepToTapCenterView]];
     [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightSideToDisappear]];
+    
+    return scenario;
+}
+
+#pragma mark - Table View
++ (id)scenarioToEnableAndDisableLeftDrawer;
+{
+    NSString *description = NSLocalizedString(@"CENTER - Test the user can disable "
+                                              "and enable the left drawer",
+                                              @"CENTER - Test the user can disable "
+                                              "and enable the left drawer");
+    MMDrawerKIFTestScenario *scenario = [MMDrawerKIFTestScenario scenarioWithDescription:description];
+    
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftBarButtonToAppear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToToggleLeftBarButtonEnabled]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftBarButtonToDisappear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToToggleLeftBarButtonEnabled]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForLeftBarButtonToAppear]];
+    
+    return scenario;
+}
+
++ (id)scenarioToEnableAndDisableRightDrawer;
+{
+    NSString *description = NSLocalizedString(@"CENTER - Test the user can disable "
+                                              "and enable the right drawer",
+                                              @"CENTER - Test the user can disable "
+                                              "and enable the right drawer");
+    MMDrawerKIFTestScenario *scenario = [MMDrawerKIFTestScenario scenarioWithDescription:description];
+    
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightBarButtonToAppear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToToggleRightBarButtonEnabled]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightBarButtonToDisappear]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToToggleRightBarButtonEnabled]];
+    [scenario addStep:[MMDrawerKIFTestStep stepToWaitForRightBarButtonToAppear]];
     
     return scenario;
 }

@@ -10,6 +10,7 @@
 
 @interface MMDrawerKIFTestScenario (Center)
 
+#pragma mark - Navigation
 + (id)scenarioToTapLeftDrawerBarButton;
 + (id)scenarioToTapRightDrawerBarButton;
 + (id)scenarioToTapLeftDrawerbarButtonAndCloseByTappingCenter;
@@ -17,5 +18,9 @@
 + (id)scenarioToDoubleTapCenterViewToPreviewLeftDrawer;
 + (id)scenarioToSwipeCenterViewAndRevealLeftDrawer;
 + (id)scenarioToSwipeCenterViewAndRevealRightDrawer;
+
+#pragma mark - Table View
++ (id)scenarioToEnableAndDisableLeftDrawer;
++ (id)scenarioToEnableAndDisableRightDrawer;
 
 @end
