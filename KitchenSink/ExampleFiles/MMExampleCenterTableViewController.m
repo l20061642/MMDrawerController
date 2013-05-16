@@ -56,6 +56,10 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 {
     [super viewDidLoad];
     
+    NSString *kifTableLabel = NSLocalizedString(@"Center Table View",
+                                                @"Center Table View");
+    [self setAccessibilityLabel:kifTableLabel];
+    
     UITapGestureRecognizer * doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
     [doubleTap setNumberOfTapsRequired:2];
     [self.view addGestureRecognizer:doubleTap];
@@ -111,11 +115,21 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 
 -(void)setupLeftMenuButton{
     MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
+    
+    NSString *kifButtonLabel = NSLocalizedString(@"Left Drawer Bar Button",
+                                                 @"Left Drawer Bar Button");
+    [leftDrawerButton setAccessibilityLabel:kifButtonLabel];
+    
     [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
 }
 
 -(void)setupRightMenuButton{
     MMDrawerBarButtonItem * rightDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(rightDrawerButtonPress:)];
+    
+    NSString *kifButtonLabel = NSLocalizedString(@"Right Drawer Bar Button",
+                                                 @"Right Drawer Bar Button");
+    [rightDrawerButton setAccessibilityLabel:kifButtonLabel];
+    
     [self.navigationItem setRightBarButtonItem:rightDrawerButton animated:YES];
 }
 

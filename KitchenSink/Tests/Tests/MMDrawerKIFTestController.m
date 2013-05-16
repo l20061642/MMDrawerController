@@ -7,7 +7,13 @@
 //
 
 #import "MMDrawerKIFTestController.h"
+#import "MMDrawerKIFTestScenarioImports.h"
 
 @implementation MMDrawerKIFTestController
+
+- (void)initializeScenarios;
+{
+    
+}
 
 @end

@@ -35,11 +35,17 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     NSLog(@"Right did appear");
+    
+    NSString *kifTableLabel = NSLocalizedString(@"Right Side Table View",
+                                                @"Right Side Table View");
+    [self.tableView setAccessibilityLabel:kifTableLabel];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     NSLog(@"Right will disappear");
+    
+    [self.tableView setAccessibilityLabel:@"Right Offscreen"];
 }
 
 -(void)viewDidDisappear:(BOOL)animated{

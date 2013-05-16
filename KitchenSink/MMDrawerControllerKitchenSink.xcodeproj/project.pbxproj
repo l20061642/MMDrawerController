@@ -35,6 +35,8 @@
 		29E2C61A1738A10F00606309 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6161738A10F00606309 /* Icon.png */; };
 		29E2C61B1738A10F00606309 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E2C6171738A10F00606309 /* Icon@2x.png */; };
 		29F6163B172AC22A00B31282 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */; };
+		6B9A3AB0174454D000CF61BE /* MMDrawerKIFTestStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AAF174454D000CF61BE /* MMDrawerKIFTestStep.m */; };
+		6B9A3AB3174454E700CF61BE /* MMDrawerKIFTestScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */; };
 		6BB2046D174443B60064260B /* MMKIFGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB20467174443B60064260B /* MMKIFGestureHandler.m */; };
 		6BB2046E174443B60064260B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BB20468174443B60064260B /* README.md */; };
 		6BB2046F174443B60064260B /* UIEvent+MMKIFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2046A174443B60064260B /* UIEvent+MMKIFEvent.m */; };
@@ -133,6 +135,12 @@
 		29E2C6171738A10F00606309 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		29F61639172AC22A00B31282 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		6B9A3AAE174454D000CF61BE /* MMDrawerKIFTestStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestStep.h; sourceTree = "<group>"; };
+		6B9A3AAF174454D000CF61BE /* MMDrawerKIFTestStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerKIFTestStep.m; sourceTree = "<group>"; };
+		6B9A3AB1174454E700CF61BE /* MMDrawerKIFTestScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestScenario.h; sourceTree = "<group>"; };
+		6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerKIFTestScenario.m; sourceTree = "<group>"; };
+		6B9A3AB41744550600CF61BE /* MMDrawerKIFTestScenarioImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestScenarioImports.h; sourceTree = "<group>"; };
+		6B9A3AB51744554C00CF61BE /* MMDrawerKIFTestStepImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerKIFTestStepImports.h; sourceTree = "<group>"; };
 		6BB20466174443B60064260B /* MMKIFGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKIFGestureHandler.h; sourceTree = "<group>"; };
 		6BB20467174443B60064260B /* MMKIFGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKIFGestureHandler.m; sourceTree = "<group>"; };
 		6BB20468174443B60064260B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -309,6 +317,26 @@
 			path = Icons;
 			sourceTree = SOURCE_ROOT;
 		};
+		6B9A3AA817444E8C00CF61BE /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A3AB1174454E700CF61BE /* MMDrawerKIFTestScenario.h */,
+				6B9A3AB2174454E700CF61BE /* MMDrawerKIFTestScenario.m */,
+				6B9A3AB41744550600CF61BE /* MMDrawerKIFTestScenarioImports.h */,
+			);
+			name = Scenarios;
+			sourceTree = "<group>";
+		};
+		6B9A3AAA17444E9200CF61BE /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A3AAE174454D000CF61BE /* MMDrawerKIFTestStep.h */,
+				6B9A3AAF174454D000CF61BE /* MMDrawerKIFTestStep.m */,
+				6B9A3AB51744554C00CF61BE /* MMDrawerKIFTestStepImports.h */,
+			);
+			name = Steps;
+			sourceTree = "<group>";
+		};
 		6BB20464174441D90064260B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +375,8 @@
 				6BB204CD174445280064260B /* MMDrawerControllerKitchenSinkKIFTests-Info.plist */,
 				6BB204D0174449470064260B /* MMDrawerKIFTestController.h */,
 				6BB204D1174449470064260B /* MMDrawerKIFTestController.m */,
+				6B9A3AA817444E8C00CF61BE /* Scenarios */,
+				6B9A3AAA17444E9200CF61BE /* Steps */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -519,6 +549,8 @@
 				6BB204B7174444D10064260B /* UIEvent+MMKIFEvent.m in Sources */,
 				6BB204B8174444D10064260B /* UITouch+MMKIFTouch.m in Sources */,
 				6BB204D2174449470064260B /* MMDrawerKIFTestController.m in Sources */,
+				6B9A3AB0174454D000CF61BE /* MMDrawerKIFTestStep.m in Sources */,
+				6B9A3AB3174454E700CF61BE /* MMDrawerKIFTestScenario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
